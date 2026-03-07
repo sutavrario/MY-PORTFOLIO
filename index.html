@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sutavra Mitra — B.Tech CS Student | AI, Cloud & Full Stack Developer building intelligent systems and real-world applications.">
+    <title>Sutavra Mitra | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans:wght@400;700&family=Noto+Sans+Devanagari:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&family=Noto+Sans+Bengali:wght@400;700&family=Noto+Sans+Thai:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-logo">Sutavra Mitra</div>
+        <div class="nav-links">
+            <a href="#hero" class="nav-link magnetic" data-text="Home">Home</a>
+            <a href="#about" class="nav-link magnetic" data-text="About">About</a>
+            <a href="#skills" class="nav-link magnetic" data-text="Skills">Skills</a>
+            <a href="#education" class="nav-link magnetic" data-text="Education">Education</a>
+            <a href="#projects" class="nav-link magnetic" data-text="Projects">Projects</a>
+            <a href="#certifications" class="nav-link magnetic" data-text="Certs">Certs</a>
+            <a href="#contact" class="nav-link magnetic" data-text="Contact">Contact</a>
+        </div>
+        <div class="nav-hamburger" id="nav-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-subtitle-top">Hello, I am</div>
+            <h1 id="hero-name" class="hero-name">SUTAVRA MITRA</h1>
+            <div class="hero-language-label" id="language-label">English</div>
+            <p class="hero-tagline">AI, Cloud &amp; Full Stack Developer</p>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <h2 class="section-title reveal-item">
+                <span class="title-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text reveal-item">
+                    <p>I am an undergraduate Computer Science student passionate about AI, cloud computing, and
+                        full-stack development. I enjoy building intelligent systems that solve real-world problems,
+                        especially in areas like audio analysis, environmental monitoring, and crowd safety.</p>
+                    <p>I have experience working with machine learning, Firebase, Google Cloud, and real-time data
+                        systems.</p>
+                    <p class="about-highlight">Building intelligent systems and real-world applications that make an
+                        impact.</p>
+                </div>
+                <div class="about-stats reveal-item">
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Projects Built</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">GPA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="section-container">
+            <h2 class="section-title reveal-item">
+                <span class="title-number">02.</span> Skills
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card reveal-item magnetic">
+                    <div class="skill-icon">💻</div>
+                    <h3>Programming</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                    <p>Java, Python, C, C++, JavaScript, HTML, CSS</p>
+                </div>
+                <div class="skill-card glass-card reveal-item magnetic">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI / ML</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                    <p>Machine Learning, NLP, Prompt Engineering, Vertex AI</p>
+                </div>
+                <div class="skill-card glass-card reveal-item magnetic">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & Platforms</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85"></div>
+                    </div>
+                    <p>Google Cloud, Firebase, Streamlit, Web App Deployment</p>
+                </div>
+                <div class="skill-card glass-card reveal-item magnetic">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Tools</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80"></div>
+                    </div>
+                    <p>MySQL, Firebase, IntelliJ, VS Code, Jupyter Notebook</p>
+                </div>
+                <div class="skill-card glass-card reveal-item magnetic">
+                    <div class="skill-icon">🌐</div>
+                    <h3>Networking</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75"></div>
+                    </div>
+                    <p>Cisco CLI, Packet Tracer, Networking Fundamentals</p>
+                </div>
+                <div class="skill-card glass-card reveal-item magnetic">
+                    <div class="skill-icon">🎯</div>
+                    <h3>Soft Skills</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90"></div>
+                    </div>
+                    <p>Leadership, People Management, Communication, Rapport Building</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section education-section">
+        <div class="section-container">
+            <h2 class="section-title reveal-item">
+                <span class="title-number">03.</span> Education
+            </h2>
+            <div class="education-timeline">
+                <div class="edu-card glass-card reveal-item magnetic">
+                    <div class="edu-year">2024 – 2028</div>
+                    <h3>B.Tech in Computer Science</h3>
+                    <p class="edu-institution">University of Engineering and Management, Kolkata</p>
+                    <p class="edu-detail">GPA: 8.4</p>
+                </div>
+                <div class="edu-card glass-card reveal-item magnetic">
+                    <div class="edu-year">2022 – 2024</div>
+                    <h3>12th Standard</h3>
+                    <p class="edu-institution">Barasat Mahatma Gandhi Memorial High School</p>
+                    <p class="edu-detail">Percentage: 84%</p>
+                </div>
+                <div class="edu-card glass-card reveal-item magnetic">
+                    <div class="edu-year">2016 – 2022</div>
+                    <h3>10th Standard</h3>
+                    <p class="edu-institution">Basirhat High School</p>
+                    <p class="edu-detail">Percentage: 91%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-container">
+            <h2 class="section-title reveal-item">
+                <span class="title-number">04.</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card reveal-item magnetic">
+                    <div class="project-image">
+                        <div class="project-placeholder">01</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Smart Green Coal Generator Network</h3>
+                        <p>Full-stack environmental monitoring platform for waste-to-biocharcoal generators with
+                            real-time dashboard, gamified leaderboard, and secure admin panel.</p>
+                        <div class="project-award">🏆 Best IoT Track — Technologia 1.0 Hackathon (UEM Kolkata)</div>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-item magnetic">
+                    <div class="project-image">
+                        <div class="project-placeholder">02</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>VOXGUARD — Vocal Health Monitor</h3>
+                        <p>AI-driven audio analysis system for monitoring vocal cord pressure during concerts. Built DSP
+                            pipeline for frequency/amplitude analysis with real-time feedback.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">DSP</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Hardware</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-item magnetic">
+                    <div class="project-image">
+                        <div class="project-placeholder">03</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>University Exam & Grading System</h3>
+                        <p>Full-stack platform with role-based auth for Students, Professors, and Admins. Features
+                            dashboards for marks, grading, review requests, and activity monitoring.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">Tailwind</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-item magnetic">
+                    <div class="project-image">
+                        <div class="project-placeholder">04</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Crowd Management & Security AI</h3>
+                        <p>AI-powered crowd monitoring using computer vision with real-time dashboard for detecting
+                            crowd density, bottlenecks, and automated overcrowding alerts.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass-card reveal-item magnetic">
+                    <div class="project-image">
+                        <div class="project-placeholder">05</div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Gesture Controlled Music Software</h3>
+                        <p>Control music volume, speed, and frequency using hand gestures. Built with OpenCV and PyAudio
+                            for real-time gesture recognition.</p>
+                        <div class="project-tags">
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">PyAudio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section certifications-section">
+        <div class="section-container">
+            <h2 class="section-title reveal-item">
+                <span class="title-number">05.</span> Certifications
+            </h2>
+            <div class="certs-grid">
+                <div class="cert-card glass-card reveal-item magnetic">
+                    <div class="cert-icon">🛡️</div>
+                    <h3>Cyber Security Fundamentals</h3>
+                    <p>University of London</p>
+                    <span class="cert-date">Oct 2025</span>
+                </div>
+                <div class="cert-card glass-card reveal-item magnetic">
+                    <div class="cert-icon">🐍</div>
+                    <h3>Intro to Programming Using Python</h3>
+                    <p>Great Learning</p>
+                    <span class="cert-date">Aug 2024</span>
+                </div>
+                <div class="cert-card glass-card reveal-item magnetic">
+                    <div class="cert-icon">🌐</div>
+                    <h3>CCNA Essential</h3>
+                    <p>ISOEH — IP addressing, subnetting, routing, VLANs, Cisco IOS</p>
+                    <span class="cert-date">Oct 2025</span>
+                </div>
+                <div class="cert-card glass-card reveal-item magnetic">
+                    <div class="cert-icon">☁️</div>
+                    <h3>Google Cloud Skills Boost</h3>
+                    <p>AI with Gemini & Imagen · GenAI with Streamlit · Gemini API in Vertex AI · Speech & Language APIs
+                        · AppSheet · Cloud Storage</p>
+                    <span class="cert-date">Google Cloud</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-container">
+            <h2 class="section-title reveal-item">
+                <span class="title-number">06.</span> Get In Touch
+            </h2>
+            <div class="contact-content reveal-item">
+                <p class="contact-text">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" name="name" placeholder="Your Name"
+                            class="form-input glass-card" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" name="email" placeholder="Your Email"
+                            class="form-input glass-card" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" name="message" placeholder="Your Message"
+                            class="form-input form-textarea glass-card" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit magnetic">
+                        <span>Send Message</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="contact-links">
+                    <a href="https://github.com/sutavrario" target="_blank" class="contact-link magnetic">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sutavrariomitra6/" target="_blank"
+                        class="contact-link magnetic">LinkedIn</a>
+                    <a href="mailto:mitrasutavra65@gmail.com" class="contact-link magnetic">Email</a>
+                    <a href="tel:+917596859368" class="contact-link magnetic">Phone</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Sutavra Mitra. Crafted with passion.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
