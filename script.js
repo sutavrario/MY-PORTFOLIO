@@ -28,7 +28,7 @@
 
     // ─── Multilingual Name Data ──────────────────────────────
     const NAME_TRANSLATIONS = [
-        { text: 'SUTAVRA MITRA', lang: 'English', font: "'Space Mono', monospace" },
+        { text: 'Sutavra Mitra', lang: 'English', font: "'Space Mono', monospace" },
         { text: 'সুতাভ্র মিত্র', lang: 'Bengali', font: "'Noto Sans Bengali', sans-serif" },
         { text: 'सुताभ्र मित्र', lang: 'Hindi', font: "'Noto Sans Devanagari', sans-serif" },
     ];
