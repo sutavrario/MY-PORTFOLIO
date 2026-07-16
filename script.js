@@ -289,10 +289,11 @@
     }
 
     function animateNumber(element) {
-        const target = parseInt(element.dataset.target);
-        if (!target || element.dataset.animated) return;
+        const target = parseFloat(element.dataset.target);
+        if (isNaN(target) || element.dataset.animated) return;
         element.dataset.animated = 'true';
 
+        const isFloat = element.dataset.target.includes('.');
         let current = 0;
         const increment = target / 40;
         const timer = setInterval(() => {
@@ -301,7 +302,7 @@
                 current = target;
                 clearInterval(timer);
             }
-            element.textContent = Math.floor(current);
+            element.textContent = isFloat ? current.toFixed(1) : Math.floor(current);
         }, 30);
     }
 
