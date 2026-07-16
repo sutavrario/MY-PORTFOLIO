@@ -1209,3 +1209,32 @@ body:hover #cursor-glow {
         display: none;
     }
 }
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.project-link {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(220, 20, 60, 0.1);
+    color: var(--accent-crimson);
+    text-decoration: none;
+    border: 1px solid rgba(220, 20, 60, 0.2);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-link:hover {
+    background: var(--accent-crimson);
+    color: white;
+    box-shadow: 0 4px 12px rgba(220, 20, 60, 0.4);
+}
+
